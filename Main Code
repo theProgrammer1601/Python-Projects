@@ -1,1 +1,36 @@
+# Main script main.py
+import ci_services_db
+from ci_services2_db import add_ci_service, get_all_ci_services, get_ci_service_by_id
+
+# Function to display available CI services
+def display_ci_services():
+    services = get_all_ci_services()
+
+    print("Available CI Services:")
+    for service in services:
+        print(f"{service['id']}. {service['name']} - {service['description']} ({service['url']})")
+
+# Function to take user input for code integration
+def integrate_code():
+    service_id = int(input("Enter the ID of the CI service you want to use: "))
+    code_to_integrate = input("Enter the code you want to integrate: ")
+
+    selected_service = get_ci_service_by_id(service_id)
+
+    if selected_service:
+        ci_service_url = selected_service['url']
+        print(f"Integrating code using {ci_service_url}...")
+        # Perform the actual integration logic here
+
+if __name__ == "__main__":
+    # Add CI services using the provided data
+    add_ci_service('Jenkins', 'Open source automation server', 'https://jenkins.io/')
+    add_ci_service('Travis CI', 'CI/CD service for GitHub projects', 'https://travis-ci.org/')
+    add_ci_service('CircleCI', 'Continuous integration and delivery platform', 'https://circleci.com/')
+
+    # Display available CI services
+    display_ci_services()
+
+    # Take user input for code integration
+    integrate_code()
 
