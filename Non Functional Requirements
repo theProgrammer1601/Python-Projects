@@ -1,1 +1,30 @@
- 
+Non-Functional Requirements:
+Performance:
+
+Description: The CI system should perform builds and tests within an acceptable time frame.
+Criteria: Builds and tests complete within a specified time limit, ensuring fast feedback to developers.
+Scalability:
+
+Description: The CI system should scale efficiently to handle an increasing number of concurrent builds and tests.
+Criteria: The system should handle growth in the number of projects and developers without a significant decrease in performance.
+Reliability:
+
+Description: The CI system should be highly reliable and available.
+Criteria: Minimal downtime, high availability, and recovery mechanisms in case of failures.
+Security:
+
+Description: The CI system should implement security measures to protect code repositories, build artifacts, and test results.
+Criteria: Access controls, secure communication, and vulnerability scanning.
+Maintainability:
+
+Description: The CI system should be easy to maintain and upgrade.
+Criteria: Well-documented configurations, easy integration with new tools, and straightforward updates.
+Usability:
+
+Description: The CI system should have a user-friendly interface for configuration and monitoring.
+Criteria: Intuitive user interface, clear documentation, and training materials.
+Compliance:
+
+Description: The CI system should comply with relevant industry standards and regulations.
+Criteria: Adherence to industry-specific compliance requirements.
+By considering both functional and non-functional requirements, you can ensure that your CI system not only meets the basic functional needs but also addresses critical aspects like performance, reliability, and security. 
