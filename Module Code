@@ -1,1 +1,17 @@
+ci_services = []
+
+def add_ci_service(name, description, url):
+    global ci_services
+    service_id = len(ci_services) + 1
+    ci_service = {'id': service_id, 'name': name, 'description': description, 'url': url}
+    ci_services.append(ci_service)
+    return ci_service
+
+def get_all_ci_services():
+    global ci_services
+    return ci_services
+
+def get_ci_service_by_id(service_id):
+    global ci_services
+    return next((service for service in ci_services if service['id'] == service_id), None)
 
