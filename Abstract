@@ -1,7 +1,5 @@
-Continuous Integration (CI) is a software development practice that involves regularly and automatically
-integrating code changes from multiple contributors into a shared repository. 
-The primary goal of CI is to detect and address integration issues early in the development process, 
-ensuring that the software remains in a consistent and functional state. By automating the build and testing processes, 
-CI helps teams deliver high-quality software more efficiently, fostering collaboration and reducing the risk of bugs and conflicts.
-The continuous integration pipeline typically includes automated testing, code analysis, and deployment, 
-enabling rapid feedback and facilitating a more streamlined and reliable software development lifecycle.
+Continuous Integration (CI) is a software development practice that involves regularly and automatically integrating code changes from multiple contributors into a 
+shared repository.The primary goal of CI is to detect and address integration issues early in the development process, ensuring that the software remains in a 
+consistent and functional state. By automating the build and testing processes, CI helps teams deliver high-quality software more efficiently, fostering collaboration 
+and reducing the risk of bugs and conflicts.The continuous integration pipeline typically includes automated testing, code analysis, and deployment,enabling rapid 
+feedback and facilitating a more streamlined and reliable software development lifecycle.
